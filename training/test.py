@@ -60,7 +60,7 @@ def prepare_testing_data(config):
     def get_test_data_loader(config, test_name):
         # update the config dictionary with the specific testing dataset
         config = config.copy()  # create a copy of config to avoid altering the original one
-        config['test_dataset'] = test_name  # specify the current test dataset
+        config['test_dataset'] = "/Users/anushka/Downloads/LAV-DF-Women/dev"  # specify the current test dataset
         test_set = DeepfakeAbstractBaseDataset(
                 config=config,
                 mode='test', 
